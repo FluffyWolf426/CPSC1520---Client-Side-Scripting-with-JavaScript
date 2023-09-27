@@ -1,5 +1,6 @@
 // this is our javascript file.
-
+let budgetForm = document.querySelector("#budget-form")
+console.log(budgetForm)
 // intercept the form.
 
 // focus to the first element

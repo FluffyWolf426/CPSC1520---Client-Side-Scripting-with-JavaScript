@@ -104,14 +104,14 @@ const validateInput = (element, isValidForm) => {
 
 // add a budget item create function
 const addLineItem = (title, amount, description) => {
-    budgetList = document.querySelector(".current-budget")
+    // budgetList = document.querySelector(".current-budget")
     let newItem = `<li class="list-group-item list-group-item-action" aria-current="true">
         ${title} (${amount}$) - ${description}
     </li>`
     budgetList.innerHTML = budgetList.innerHTML + newItem
 }
 
-// add a updateTotal function
+// add a updateTotal function$
 const updateTotal = (amount) => {
     let budgetTotalElement = document.querySelector("#budget-total")
     budgetTotalElement.innerHTML = parseInt(budgetTotalElement.innerText) + parseInt(amount) 

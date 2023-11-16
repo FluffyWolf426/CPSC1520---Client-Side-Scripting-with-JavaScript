@@ -32,26 +32,26 @@ Use the following list as a guide to complete the task:
 let catListElement = document.querySelector(".cat-display")
 
 // promise syntax
-// const getCats = () => {
-//   // the local url/path
-//   const CATS_DATA_JSON_PATH = '/data/cats-with-jobs.json'
-//   // in the above note that I don't need to specify the domain.
-//   // why? because it's just going to use the current server.
-//   // the above line is interpreted as "http://localhost:5500/data/cats-with-jobs.json"
+const getCats = () => {
+  // the local url/path
+  const CATS_DATA_JSON_PATH = '/data/cats-with-jobs.json'
+  // in the above note that I don't need to specify the domain.
+  // why? because it's just going to use the current server.
+  // the above line is interpreted as "http://localhost:5500/data/cats-with-jobs.json"
 
-//   // let's make the fetch request and see what's up.
-//   fetch(CATS_DATA_JSON_PATH, {
-//     method: "GET"
-//   }).then((response)=> {
-//     return response.json()
-//   }).then((catData)=> {
-//     console.log('catData')
-//     // cat data is an array
-//     console.log(catData)
-//     renderCats(catData)
-//   })
+  // let's make the fetch request and see what's up.
+  fetch(CATS_DATA_JSON_PATH, {
+    method: "GET"
+  }).then((response)=> {
+    return response.json()
+  }).then((catData)=> {
+    console.log('catData')
+    // cat data is an array
+    console.log(catData)
+    renderCats(catData)
+  })
 
-// }
+}
 
 // async/await syntax
 // const getCats = async () => {

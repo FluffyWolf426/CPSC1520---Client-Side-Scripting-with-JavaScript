@@ -38,6 +38,8 @@ let todos = [
     }
 ];
 
+console.log(todos)
+
 todoForm.addEventListener("submit", (event)=> {
     // prevent the default action
     event.preventDefault()
@@ -52,9 +54,7 @@ todoForm.addEventListener("submit", (event)=> {
     addTodo(newTodo)
 
     // reset the form
-    form.reset()
-    // focus on the input.
-    todoDescription.focus()
+    
 })
 
 // listen to changes in the todoLIst element.

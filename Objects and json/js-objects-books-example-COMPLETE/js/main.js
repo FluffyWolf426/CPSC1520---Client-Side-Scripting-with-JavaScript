@@ -844,6 +844,8 @@ bookFilterForm.addEventListener("submit", (event)=> {
   // get all of the books.
   // make a new array
   let bookSubset = getAllBooks()
+  console.log("data for me")
+  console.log(bookSubset)
   // get the input values
   let query = bookFilterForm.elements['filter-query']
   let author = bookFilterForm.elements['author']

@@ -67,6 +67,8 @@ Sample object in the array of books returned from getAllBooks:
 
 
   function getBooksFilter(filterQuery, bookProperty, books) {
+    console.log("BOOOOOOOOOOOOKS")
+    console.log(books)
     filterQuery = filterQuery.toLowerCase();
     return books.filter((book) => {
       return book[bookProperty].toLowerCase().includes(filterQuery);

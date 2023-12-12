@@ -827,6 +827,8 @@ const getAuthors = (bookList) => {
 // render the author select options
 const renderAuthorOptions = () => {
   let authorSelect = bookFilterForm.elements["author"]
+  console.log("This is an author!!!!!!")
+  console.log(authorSelect)
   // get the authors
   let authors = getAuthors(allBooks)
   

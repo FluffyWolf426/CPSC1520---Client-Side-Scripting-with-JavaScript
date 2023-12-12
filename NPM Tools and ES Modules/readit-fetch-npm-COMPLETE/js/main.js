@@ -91,7 +91,7 @@ readitForm.addEventListener("submit", async (event)=> {
 
     // and then we're going to add the item to page.
     // with the data from the backend.
-    addReaditItem({
+       ({
         id: reviewData.id,
         url: reviewData.url,
         title: reviewData.title,
@@ -103,7 +103,7 @@ readitForm.addEventListener("submit", async (event)=> {
 /*
 If we we're defining our function like so:
 
-const addReaditItem = (title, url) => { ... }
+const     = (title, url) => { ... }
 
 we'd have to call the function with title and url 
 always in the same order, you'd call it like so.
@@ -307,7 +307,7 @@ getReviews().then((reviewsData)=> {
     // im looping over the reviews fetched from the
     // backend and using my existing functions
     reviewsData.map((review)=> {
-        addReaditItem({
+           ({
             id: review.id,
             title: review.title,
             url: review.url,
